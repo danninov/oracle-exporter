@@ -6,9 +6,7 @@ services:
     ports:
      - "9161:9161"
     environment:
-    - ORACLE_USER=system
-    - ORACLE_PASSWORD=password
-    - ORACLE_TNSNAME=//localhost:1521/db
+    - DATA_SOURCE_NAME=system/password@//localhost:1521/db
     - ORACLE_DATABASE=db
     - ORACLE_INSTANCE=db
 

@@ -2,9 +2,7 @@
 src = "oracle.conf.tmpl"
 dest = "/oracle.conf"
 keys = [
-    "/oracle/user",
-    "/oracle/password",
-    "/oracle/tnsname",
+    "/data/source/name",
     "/oracle/database",
     "/oracle/instance"
 ]
