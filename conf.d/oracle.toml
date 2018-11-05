@@ -4,6 +4,7 @@ dest = "/oracle.conf"
 keys = [
     "/data/source/name",
     "/oracle/database",
-    "/oracle/instance"
+    "/oracle/instance",
+    "/oracle/alertlog"
 ]
 
