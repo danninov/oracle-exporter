@@ -8,6 +8,7 @@ services:
     environment:
     - ORACLE_USER=system
     - ORACLE_PASSWORD=password
+    - ORACLE_TNSNAME=//localhost:1521/db
     - ORACLE_DATABASE=db
     - ORACLE_INSTANCE=db
 

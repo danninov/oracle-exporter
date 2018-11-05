@@ -5,6 +5,7 @@ dest = "/oracle.conf"
 keys = [
     "/user",
     "/password",
+    "/tnsname",
     "/database",
     "/instance"
 ]
