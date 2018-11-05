@@ -1,0 +1,13 @@
+version: '2'
+services:
+  oracle-exporter:
+    build:
+      context: .
+    ports:
+     - "9161:9161"
+    environment:
+    - ORACLE_USER=system
+    - ORACLE_PASSWORD=password
+    - ORACLE_DATABASE=db
+    - ORACLE_INSTANCE=db
+

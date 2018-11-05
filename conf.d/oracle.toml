@@ -1,0 +1,11 @@
+[template]
+prefix = "/oracle"
+src = "oracle.conf.tmpl"
+dest = "/oracle.conf"
+keys = [
+    "/user",
+    "/password",
+    "/database",
+    "/instance"
+]
+
