@@ -9,8 +9,8 @@ RUN apt-get -qq update && \
     ldconfig
 
 COPY oci8.pc /usr/share/pkgconfig/oci8.pc
-RUN go get -d github.com/freenetdigital/prometheus_oracle_exporter
-RUN cd $GOPATH/src/github.com/freenetdigital/prometheus_oracle_exporter/ && GOOS=linux go build -ldflags "-s -w" -o /app .
+RUN go get -d github.com/danninov/prometheus_oracle_exporter
+RUN cd $GOPATH/src/github.com/danninov/prometheus_oracle_exporter/ && GOOS=linux go build -ldflags "-s -w" -o /app .
 
 FROM ubuntu:18.04
 MAINTAINER Seth Miller <seth@sethmiller.me>
@@ -37,5 +37,5 @@ RUN mkdir -p /etc/confd/conf.d && mkdir -p /etc/confd/templates
 ADD ./conf.d /etc/confd/conf.d
 ADD ./templates /etc/confd/templates
 
-EXPOSE 9161
+EXPOSE 9162
 ENTRYPOINT ["/entrypoint.sh"]
